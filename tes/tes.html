@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Toggle Table</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<table id="tableA">
+  <caption>Tabel A</caption>
+  <tr>
+    <th>Header A1</th>
+    <th>Header A2</th>
+  </tr>
+  <tr>
+    <td>Data A1</td>
+    <td>Data A2</td>
+  </tr>
+</table>
+
+<button id="nextButton" onclick="toggleTable()">Next</button>
+<table id="tableB" style="display:none;">
+  <caption>Tabel B</caption>
+  <tr>
+    <th>Header B1</th>
+    <th>Header B2</th>
+  </tr>
+  <tr>
+    <td>Data B1</td>
+    <td>Data B2</td>
+  </tr>
+</table>
+
+<button id="nextButton1" style="display:none;" onclick="toggleTable1()">Next</button>
+<table id="tableC" style="display:none;">
+  <caption>Tabel C</caption>
+  <tr>
+    <th>Header C1</th>
+    <th>Header C2</th>
+  </tr>
+  <tr>
+    <td>Data C1</td>
+    <td>Data C2</td>
+  </tr>
+</table>
+
+<button id="nextButton2" style="display:none;" onclick="toggleTable2()">Next</button>
+<table id="tableD" style="display:none;">
+  <caption>Tabel D</caption>
+  <tr>
+    <th>Header C1</th>
+    <th>Header C2</th>
+  </tr>
+  <tr>
+    <td>Data C1</td>
+    <td>Data C2</td>
+  </tr>
+</table>
+
+<button id="nextButton3" style="display:none;" onclick="toggleTable3()">Next</button>
+<table id="tableE" style="display:none;">
+  <caption>Tabel E</caption>
+  <tr>
+    <th>Header C1</th>
+    <th>Header C2</th>
+  </tr>
+  <tr>
+    <td>Data C1</td>
+    <td>Data C2</td>
+  </tr>
+</table>
+
+<script>
+function toggleTable() {
+  var tableB = document.getElementById("tableB");
+  var button1 = document.getElementById("nextButton1");
+  var nextButton = document.getElementById("nextButton");
+
+  if (tableB.style.display === "none") {
+    tableB.style.display = "table";
+    button1.style.display = "inline-block"; // Menampilkan button1
+    // nextButton.textContent = "Previous";
+    nextButton.style.display = "none"
+  } else {
+    tableB.style.display = "none";
+    button1.style.display = "none"; // Menyembunyikan button1
+    // nextButton.textContent = "Next";
+    nextButton.style.display = "none"
+  }
+}
+
+// function toggleTable1() {
+//   var tableC = document.getElementById("tableC");
+//   var nextButton = document.getElementById("nextButton1");
+
+//   if (tableC.style.display === "none") {
+//     tableC.style.display = "table";
+//     // nextButton.textContent = "Previous";
+//     nextButton.style.display = "none"
+//   } else {
+//     tableC.style.display = "none";
+//     // nextButton.textContent = "Next";
+//     nextButton.style.display = "none"
+//   }
+// }
+
+function toggleTable1() {
+  var tableB = document.getElementById("tableC");
+  var button= document.getElementById("nextButton2");
+  var nextButton = document.getElementById("nextButton1");
+
+  if (tableB.style.display === "none") {
+    tableB.style.display = "table";
+    button.style.display = "inline-block"; // Menampilkan button1
+    // nextButton.textContent = "Previous";
+    nextButton.style.display = "none"
+  } else {
+    tableB.style.display = "none";
+    button1.style.display = "none"; // Menyembunyikan button1
+    // nextButton.textContent = "Next";
+    nextButton.style.display = "none"
+  }
+}
+
+function toggleTable2() {
+  var tableB = document.getElementById("tableD");
+  var button= document.getElementById("nextButton3");
+  var nextButton = document.getElementById("nextButton2");
+
+  if (tableB.style.display === "none") {
+    tableB.style.display = "table";
+    button.style.display = "inline-block"; // Menampilkan button1
+    // nextButton.textContent = "Previous";
+    nextButton.style.display = "none"
+  } else {
+    tableB.style.display = "none";
+    button.style.display = "none"; // Menyembunyikan button1
+    // nextButton.textContent = "Next";
+    nextButton.style.display = "none"
+  }
+}
+
+function toggleTable3() {
+  var tableC = document.getElementById("tableE");
+  var nextButton = document.getElementById("nextButton3");
+  
+
+  if (tableC.style.display === "none") {
+    tableC.style.display = "table";
+    // nextButton.textContent = "Previous";
+    nextButton.style.display = "none"
+  } else {
+    tableC.style.display = "none";
+    // nextButton.textContent = "Next";
+    nextButton1.style.display = "none"
+  }
+}
+</script>
+
+</body>
+</html>

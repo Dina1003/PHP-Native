@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style/style.css">
+    <title>SPK TA</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo">SPK Penempatan Wali Kelas</div>
+        <input type="checkbox" id="nav_check" hidden>
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html" class="active">Home</a>
+                </li>
+                <li>
+                    <a href="kriteria.html">Kriteria</a>
+                </li>
+                <li>
+                    <a href="alternatif.html">Alternatif</a>
+                </li>
+                <li>
+                    <a href="">Proses</a>
+                </li>
+                <li>
+                    <a href="rekap.html">Rekap</a>
+                </li>
+                <li>
+                    <a href="">Log-Out</a>
+                </li>
+
+            </ul>
+        </nav>
+        <label for="nav_check" class="hamburger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </label>
+    </header>
+
+    <div class="isi">
+        <a href="kriteria.html">Kriteria</a>
+        <a href="subKriteria.html">/ Sub-Kriteria</a>
+        <a href="#">/ Nilai Perbandingan Kepentingan Kriteria</a>
+        <a href="#">/ Bobot Kriteria</a>
+
+        <h3 class="h3">Tambah Data Kriteria</h3>
+        <form action="" method="post">
+            <span class="keterangan">Kriteria</span>
+            <select name="List1" id="Kriteria" class="list">
+                <option value="">K1</option>
+                <option value="">K2</option>
+                <option value="">K3</option>
+                <option value="">K4</option>
+                <option value="">K5</option>
+            </select>
+
+            <span class="keterangan">Nama Kriteria</span>
+            <select name="List1" id="Kriteria" class="list">
+                <option value="">Hubungan Dengan Siswa</option>
+                <option value="">Metode Pembelajaran</option>
+                <option value="">Metode Evaluasi Pembelajaran</option>
+                <option value="">Kehadiran</option>
+                <option value="">Masa Kerja</option>
+            </select>
+               
+            <span class="keterangan">Sub-Kriteria</span>
+            <input type="text" class="tambah" placeholder="Kriteria">
+
+            <span class="action_btn">
+                <a href="subKriteria.html">Tambah Sub-Kriteria</a>
+            </span>
+        </form>
+    </div>
+</body>
+
+</html>

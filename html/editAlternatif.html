@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style/style.css">
+    <title>SPK TA</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo">SPK Penempatan Wali Kelas</div>
+        <input type="checkbox" id="nav_check" hidden>
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html" class="active">Home</a>
+                </li>
+                <li>
+                    <a href="kriteria.html">Kriteria</a>
+                </li>
+                <li>
+                    <a href="alternatif.html">Alternatif</a>
+                </li>
+                <li>
+                    <a href="">Proses</a>
+                </li>
+                <li>
+                    <a href="kelola_pengguna.html">Pengguna</a>
+                </li>
+                <li>
+                    <a href="">Log-Out</a>
+                </li>
+
+            </ul>
+        </nav>
+        <label for="nav_check" class="hamburger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </label>
+    </header>
+
+    <div class="isi">
+        <a href="alternatif.html">Alternatif</a>
+        <a href="tambahAlternatif.html">/ Tambah Alternatif</a>
+
+        <h3 class="h3">Edit Data Alternatif</h3>
+        <form action="" method="post">
+            <span class="keterangan">Alternatif</span>
+            <input type="text" class="tambah" placeholder="Alternatif">
+
+            <span class="keterangan">Nama</span>
+            <input type="text" class="tambah" placeholder="Nama">
+
+            <span class="keterangan">Hubungan Dengan Siswa</span>
+            <select name="List1" id="Kriteria" class="list">
+                <option value="">Sangat Dekat</option>
+                <option value="">Dekat</option>
+                <option value="">Biasa</option>
+            </select>
+
+            <span class="keterangan">Metode Pembelajaran</span>
+            <select name="List1" id="Kriteria" class="list">
+                <option value="">Demonstrasi</option>
+                <option value="">Resitasi</option>
+                <option value="">Ceramah</option>
+            </select>
+
+            <span class="keterangan">Metode Evaluasi Pembelajaran</span>
+            <select name="List1" id="Kriteria" class="list">
+
+
+
+
+                <option value="">Sangat Ketat</option>
+                <option value="">Ketat</option>
+                <option value="">Cukup Ketat</option>
+                <option value="">Biasa</option>
+            </select>
+
+            <span class="keterangan">Kehadiran</span>
+            <select name="List1" id="Kriteria" class="list">
+                <option value="">Sangat Rajin</option>
+                <option value="">Rajin</option>
+                <option value="">Biasa</option>
+            </select>
+
+            <span class="keterangan">Masa Kerja</span>
+            <select name="List1" id="Kriteria" class="list">
+                <option value=""> 1 Tahun</option>
+                <option value="">1 Tahun s/d 2 Tahun</option>
+                <option value="">2 Tahun s/d 3 Tahun</option>
+                <option value="">3 Tahun s/d 4 Tahun</option>
+                <option value=""> 5 Tahun</option>
+            </select>
+
+            <span class="action_btn">
+                <a href="alternatif.html">Edit Alternatif</a>
+            </span>
+        </form>
+    </div>
+
+</body>
+
+</html>
